@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/*
+ Faz com que ao clicar no href(link do menu, por exemplo, a página role suavemente até lá.
+ */ 
+html {
+    scroll-behavior: smooth;
+}
+
+/* 
+Garante que, ao rolar o usuário pro lugar determinado, o título não bugue e fique escondido, sempre acompanhando na tela.
+*/
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+
+body {
+    background-color: #071212;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #071212;
+    border-bottom: 4px solid #000;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    display: flex;
+    padding-top: 0px;
+    align-items: center;
+}
+
+header h1 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header a {
+    padding-right: 10px;
+    padding-left: 5px;
+}
+section {
+    margin: 20px;
+}
+
+.boasvindas {
+    text-align: center;
+}
+
+
+h1 {
+    color: cyan;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #baffff;
+}
+
+img {
+    display: flex;
+    width: 200;
+    height: 400px;
+}
+
+#inicio {
+    text-align: justify;
+}
+
+.inicio_sobre_nos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 10px;
+    padding-top: 30px;
+    padding-right: 90px;
+    padding-left: 40px;
+}
+
+.informacoes_principais {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-informacao {
+    text-align: center;
+    border: 2px solid #008b8b;
+    border-radius: 10px;
+    width: 220px;
+    height: 147px;
+}
+
+.icone {
+    width: 60px;
+    height: 60px;
+}
+
+.gosto_musical {
+    text-align: center;
+}
+
+.cards_de_musica { /* incompleto */
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+}
+
+.card_de_musica { /* incompleto */
+    border: 2px solid #008b8b;
+    border-radius: 10px;
+    width: 150px;
+    height: 225px;
+    line-height: 10px;
+}
+
+.card_de_musica img {
+    width: 150px;
+    height: 150px;
+}
+
+.card_de_musica:hover {
+    border: 2px solid #00ffff;
+}
+
+.parte_final_sobre_nos {
+    background-image: linear-gradient(180deg, #071212, #0b2222 12%, #0b2222 88%, #071212);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.visao_do_futuro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-visao_do_futuro {
+    border: 2px solid #baffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 670px;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hobbies div {
+    text-align: left;
+}
+
+.hobbies div ul{
+    list-style-type: none;
+    max-width: 550px;
+}

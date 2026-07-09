@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Pliant", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(imagens/login-bg-v2.png);
+    background-size: cover; 
+    background-position: center;
+}
+
+
+.container {
+    width: 420px;
+    background-color: rgba(11, 34, 34, 0.4);
+    border: 2px solid rgba(0, 255, 255, 0.2);
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px, 
+                rgba(0, 255, 255, 0.05) 0px 0px 20px; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.container h1 {
+    font-size: 32px;
+    text-align: center;
+    color: cyan;
+    margin-bottom: 25px;
+}
+
+/* Box dos campos de texto */
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 55px; 
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 18, 18, 0.6);
+    border: 2px solid #008b8b;
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 50px 0 25px;
+    transition: all 0.3s ease;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Efeito de foco ao clicar no campo */
+.input-box input:focus {
+    border-color: cyan;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+/* Posicionamento dos ícones dentro do input */
+.input-box img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* Centralização vertical */
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+/* Checkbox e esqueci minha senha */
+.lembrar-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 5px;
+    font-size: 14px;
+}
+
+.lembrar-login label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lembrar-login label input {
+    accent-color: cyan; /* Quadrado do checkbox Ciano */
+    margin-right: 8px;
+}
+
+.lembrar-login a {
+    color: #baffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.lembrar-login a:hover {
+    text-decoration: underline;
+    color: cyan;
+}
+
+/* Botão de Enviar */
+button {
+    width: 100%;
+    height: 50px;
+    background-color: #008b8b; /* Cor base dos cards */
+    border-radius: 40px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+/* Texto de rodapé (Cadastre-se) */
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.register-link p a {
+    color: #baffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: cyan;
+}
+
+/*
+Detalhe de segurança de dados
+*/
+.seguranca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.seguranca img {
+    width: 14px;
+    height: 14px;
+    opacity: 0.7;
+}
+
+.seguranca span {
+    font-size: 13px;
+    color: #baffff;
+    opacity: 0.8;
+}
