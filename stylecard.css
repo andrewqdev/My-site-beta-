@@ -1,14 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 25px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     background: url(./imagens/backgroundcard.png);
-    padding-top: 120px;
-    justify-content: center
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #071212;
+    border-bottom: 4px solid #000;
+    position: sticky;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px 0;
+}
+
+#logo {
+    display: flex;
+    padding-top: 0px;
+    align-items: center;
+}
+
+header h1 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header h3 {
+    color: white;
+}
+
+header a {
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+h1 {
+    color: cyan;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #baffff;
+}
+
+
 
 table {
     backdrop-filter: blur(10px);
@@ -17,6 +69,9 @@ table {
     border: 100px;
     align-items: center;
     text-align: center;
+    padding: 90px 0px;
+    margin: 0px auto;
+    font-size: 25px;
 }
 
 .titulo {
@@ -37,6 +92,10 @@ tr {
 
 img {
     height: 86.5px;
+}
+
+.conquistas {
+    border-radius: 100%;
 }
 
 .perfil {

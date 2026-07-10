@@ -10,13 +10,59 @@
 
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    background: url(imagens/login-bg-v2.png);
-    background-size: cover; 
+    background: url(imagens/login-bg-gamer.png);
+    background-size: cover;
+    flex-direction: column;
     background-position: center;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #071212;
+    border-bottom: 4px solid #000;
+    position: sticky;
+    top: 0;
+    padding: 25px 10px;
+}
+
+#logo {
+    display: flex;
+    padding-top: 0px;
+    align-items: center;
+}
+
+header h1 {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+header h3 {
+    color: white;
+}
+
+header a {
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+h1 {
+    color: cyan;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #baffff;
+}
+
 
 
 .container {
@@ -30,6 +76,7 @@ body {
                 rgba(0, 255, 255, 0.05) 0px 0px 20px; 
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
+    margin: auto;
 }
 
 .container h1 {

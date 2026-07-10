@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="stylecard.css">
 </head>
 <body>
-    <table border="1">
+
+    <!--Cabeçalho e menu-->
+
+    <header>
+        <div id="logo">
+            <h1>AR</h1><h3>&</h3><h1>MP</h1>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="#andrew">Andrew</a>
+            <a href="#marcus">Marcus</a>
+            <a href="card.html">Cards</a>
+            <a href="login.html">Cadastre-se</a>
+        </nav>
+    </header>
+    
+    <!-- Card de Andrew -->
+
+    <table border="1" id="andrew">
         <tr>
             <th colspan="4" class="titulo">PLAYER CARD</th>
         </tr>
@@ -44,14 +62,61 @@
             <th colspan="4"> QUESTS:</th>
         </tr>
             <th colspan="4">
-                    <img src="imagens/teia.png">
-                    <img src="imagens/trofeu.png">
-                    <img src="imagens/aranha.png">
-                    <img src="imagens/winner.png">
-                    <img src="imagens/estrela.png">               
+                    <img src="imagens/teia.png" class="conquistas">
+                    <img src="imagens/trofeu.png" class="conquistas">
+                    <img src="imagens/aranha.png" class="conquistas">
+                    <img src="imagens/winner.png" class="conquistas">
+                    <img src="imagens/estrela.png" class="conquistas">               
             </th>
-            
+        
+    </table>
+    
+    <!-- Card de Marcus -->
 
+    <table border="1" id="marcus">
+        <tr>
+            <th colspan="4" class="titulo">PLAYER CARD</th>
+        </tr>
+        <tr>
+            <th colspan="4" class="mission"> MISSÃO SEMESTRAL: </th>
+            
+        </tr>
+        <tr>
+            <th colspan="4" class="conclused"> CONCLUSED WITH SUCESS! </th>
+        </tr>
+            <th rowspan="4">
+                <img class="perfil" src="imagens/marcuspixel.jpg">
+            </th>
+            <th>NICKNAME:</th>
+        <tr>
+            <td>MarcusP</td>
+        </tr>
+        <tr>
+            <th>CLASS:</th>
+        </tr>
+        <tr>
+            <td>Attentive</td>
+        </tr>
+        <tr>
+            <th colspan="4">XP 300/300</th>
+        </tr>
+        <tr>
+            <th colspan="4"> <div class="barra-fora">
+                    <div class="barra-dentro"></div>
+                </div>
+               </th>
+        </tr>
+        <tr>
+            <th colspan="4"> QUESTS:</th>
+        </tr>
+            <th colspan="4">
+                    <img src="imagens/teia.png" class="conquistas">
+                    <img src="imagens/trofeu.png" class="conquistas">
+                    <img src="imagens/aranha.png" class="conquistas">
+                    <img src="imagens/winner.png" class="conquistas">
+                    <img src="imagens/estrela.png" class="conquistas">               
+            </th>
+        
     </table>
 </body>
 </html>

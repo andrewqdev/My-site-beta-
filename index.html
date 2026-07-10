@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR & MP</title>
+    <title>Nos conheça melhor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,9 +26,6 @@
     <!-- Início -->
 
     <section id="inicio">
-        <h1 class="boasvindas">
-            SEJA BEM-VINDO AO NOSSO SITE!
-        </h1>
         <h1>
             Quem somos nós?
         </h1>
@@ -47,8 +44,8 @@
             <h1>
                 Andrew Rafael
             </h1>
-            <h3>
-                *texto de andrew*
+            <h3 class="texto_sobre_nos">
+                Olá! Sou estudante de informática para internet no IFRN. Falando sobre mim, resolvi escolher este curso pois sempre me interessei muito pela área da tecnologia. Desde então, entrei no Instituto e me senti chamado (por enquanto) para a área do Design Gráfico (UX e UI Design). Desde muito cedo, sempre fui centrado e organizado com minhas coisas, provavelmente seja por isso que o Design seja tão chamativo para mim. Dentre minhas paixões - além da tecnologia, é claro -, estão os filmes e séries. Conheço muito desse universo, principalmente quando se trata de super-herois. Seja Marvel ou DC, tô dentro (por mais que prefira Marvel). Meu heroi favorito é o nosso amigão da vizinhança, o Spider-Man. Por quê eu gosto dele? É uma ótima pergunta, mas é bem simples de responder. Se parar pra pensar, ele é um dos herois mais humanos e próximos da nossa realidade. E, sempre, em todos os universos, passa por consequências. Tudo tem seu preço. As nossas esoclhas não são vãs. Isso é o Homem-Aranha.
             </h3>
             <p>
                 Futuro Designer em Desenvolvimento! 🚀
@@ -76,62 +73,64 @@
         </article>
 
         <article>
-            <img src="imagens/perfilandrew.png" class="imagem andrew">
+            <img src="imagens/perfilandrew.png" id="perfil-andrew" alt="Imagem de Andrew Rafael feita com IA">
         </article>
     </section>
 
-    <!-- Gosto musical -->
+    <!-- Conteúdo sobre Andrew -->
 
-    <section class="gosto_musical">
-        <h2>
-            Gostos Musicais
-        </h2>
-        <p>
-            Hardstyle's, Católicas, Internacionais e Eletrônicas
-        </p>
+    <section class="conteudo">
 
-        <article class="cards_de_musica">
-            <a href="https://open.spotify.com/search/exes%20mooly">
-                <div class="card_de_musica">
-                    <img src="imagens/apagar.png" alt="exes">
-                    <h4>
-                        exes
-                    </h4>
-                    <p>
-                        mooly
-                    </p>
-                </div>
-            </a>
+        <!-- Gosto musical -->
 
-            <a href="https://open.spotify.com/intl-pt/track/6ne8rRiRLFDu5EWiiE8BuY">
-                <div class="card_de_musica">
-                    <img src="imagens/apagar.png" alt="regaço-acolhedor">
-                    <h4>
-                        Regaço Acolhedor
-                    </h4>
-                    <p>
-                        Kelly Patrícia
-                    </p>
-                </div>
-            </a>
+        <article class="gosto_musical">
+            <h2>
+                Gostos musicais
+            </h2>
+            <div class="texto-gosto_musical">
+                <p>
+                    Hardstyle's, Católicas, Internacionais e Eletrônicas.
+                </p>
+            </div>
 
-            <a href="https://open.spotify.com/intl-pt/album/6cO8ZH061iECdHsLbjTNZ7">
-                <div class="card_de_musica">
-                    <img src="imagens/apagar.png" alt="iloveyou">
-                    <h4>
-                        I Love You
-                    </h4>
-                    <p>
-                        overrated
-                    </p>
-                </div>
-            </a>
+            <div class="cards_de_musica">
+                <a href="https://open.spotify.com/search/exes%20mooly" target="_blank">
+                    <div class="card_de_musica">
+                        <img src="imagens/capaexes.png" alt="Capa da música exes">
+                        <h4>
+                            Exes
+                        </h4>
+                        <p>
+                            Mooly
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/intl-pt/track/6ne8rRiRLFDu5EWiiE8BuY" target="_blank">
+                    <div class="card_de_musica">
+                        <img src="imagens/caparegaço.png" alt="Capa da música regaço-acolhedor">
+                        <h4>
+                            Regaço Acolhedor
+                        </h4>
+                        <p>
+                            Kelly Patrícia
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/intl-pt/album/6cO8ZH061iECdHsLbjTNZ7" target="_blank">
+                    <div class="card_de_musica">
+                        <img src="imagens/capayloveu.png" alt="Capa da música iloveyou">
+                        <h4>
+                            I Love You
+                        </h4>
+                        <p>
+                            Overrated
+                        </p>
+                    </div>
+                </a>
+            </div>
         </article>
-    </section>
-
-    <!-- Parte final (visão do futuro e hobbies) -->
-
-    <section class="parte_final_sobre_nos">
 
         <!-- Visão do futuro -->
 
@@ -142,7 +141,7 @@
 
             <div class="card-visao_do_futuro">
                 <p>
-                    Seguir carreira em no mundo do Design, atuando em projetos e em grandes atuações. Ser diferente, criar a minha própria identidade visual e ser reconhecido. Quebrar padrões. 
+                    Seguir carreira em no mundo do Design, atuando em projetos e em grandes atuações. Ser diferente, criar a minha própria identidade visual e ser reconhecido. Quebrar padrões.
                 </p>
             </div>
         </article>
@@ -154,24 +153,16 @@
                 Hobbies
             </h2>
 
-            <li>
-               Praticar Calistenia 🤸🏻‍♂️
-            </li>
-            <li>
-                Esutar Música 🎧
-            </li>
-            <li>
-                Cozinhar 🍕
-            </li>
-            <li>
-                Ler HQ'S 📖
-            </li>
-            <li>
-                Universo de Super-Herois (principalmente Spider man!!!) 🕸️
-            </li>
-            <li>
-                Tecnologia 🎮 
-            </li>
+            <div>
+                <ul>
+                    <li>Praticar Calistenia 🤸🏻‍♂️</li>
+                    <li>Esutar Música 🎧</li>
+                    <li>Cozinhar 🍕</li>
+                    <li>Ler HQ'S 📖</li>
+                    <li>Universo de Super-Herois (principalmente Spider man!!!) 🕸️</li>
+                    <li>Tecnologia 🎮</li>
+                </ul>
+            </div>
         </article>
     </section>
 
@@ -185,8 +176,8 @@
             <h1>
                 Marcus Paulo
             </h1>
-            <h3>
-                *texto de andrew*
+            <h3 class="texto_sobre_nos">
+                - sim, Marcus com "U", porque minha mãe queria que meu nome fosse diferente do meu pai, que é Marcos -, eu e minha família somos católicos, moro com meus pais e meu irmão, que, no final do ano passado, terminou o mesmo curso no mesmo campus que eu estou, ou seja, é meu egresso. Abaixo coloquei mais informações sobre mim.
             </h3>
             <p>
                 Futuro Dev em Construção 🚀
@@ -208,68 +199,70 @@
                 <div class="card-informacao">
                     <img src="imagens/icone-local.png" alt="Icone de calendario" class="icone">
                     <h3>Onde moro</h3>
-                    <p>Extremoz - RN</p>
+                    <p>Natal - RN</p>
                 </div>
             </div>
         </article>
 
         <article>
-            <img src="imagens/imagem-ia-marcus.png" alt="Imagem de Andrew Rafael feita com IA">
+            <img src="imagens/perfilmarcus.png" id="perfil-marcus" alt="Imagem de Marcus Paulo feita com IA">
         </article>
     </section>
 
-    <!-- Gosto musical -->
+    <!-- Conteúdo sobre Marcus -->
 
-    <section class="gosto_musical">
-        <h2>
-            Gostos Musicais
-        </h2>
-        <p>
-            *Gosto musical de Marcus*
-        </p>
+    <section class="conteudo">
 
-        <article class="cards_de_musica">
-            <a href="">
-                <div class="card_de_musica">
-                    <img src="imagens/apagar.png" alt="">
-                    <h4>
-                        *nome da música*
-                    </h4>
-                    <p>
-                        *autor/banda*
-                    </p>
-                </div>
-            </a>
+        <!-- Gosto musical -->
 
-            <a href="">
-                <div class="card_de_musica">
-                    <img src="imagens/apagar.png" alt="">
-                    <h4>
-                        *nome da música*
-                    </h4>
-                    <p>
-                        *autor/banda*
-                    </p>
-                </div>
-            </a>
+        <article class="gosto_musical">
+            <h2>
+                Gostos musicais
+            </h2>
+            <div class="texto-gosto_musical">
+                <p>
+                    Atualmente, eu estou gostando mais de ouvir músicas católicas, principalmente de louvor. Minhas bandas favoritas são: Colo de Deus e Missionário Shalom.
+                </p>
+            </div>
 
-            <a href="">
-                <div class="card_de_musica">
-                    <img src="imagens/apagar.png" alt="">
-                    <h4>
-                        *nome da música*
-                    </h4>
-                    <p>
-                        *autor/banda*
-                    </p>
-                </div>
-            </a>
+            <div class="cards_de_musica">
+                <a href="https://open.spotify.com/intl-pt/track/52UwxcBnQeWh4HeMngkuVs?si=344620672bad42b3" target="_blank">
+                    <div class="card_de_musica">
+                        <img src="imagens/capacasa.jpg" alt="Capa da música Casa">
+                        <h4>
+                            Casa
+                        </h4>
+                        <p>
+                            Colo de Deus
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/intl-pt/track/6NfHIncj5tQfFuM9UJJHSq?si=a6cda481a8614413" target="_blank">
+                    <div class="card_de_musica">
+                        <img src="imagens/capadesperta.jpg" alt="Capa mda música Desperta">
+                        <h4>
+                            Desperta
+                        </h4>
+                        <p>
+                            Colo de Deus
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/intl-pt/track/7GMhPJI745SazqxBCFJRm9?si=4ba5bf10ed9b423e" target="_blank">
+                    <div class="card_de_musica">
+                        <img src="imagens/capanadasecompara.jpeg" alt="Capa da música Nada Se Compara">
+                        <h4>
+                            Nada Se Compara
+                        </h4>
+                        <p>
+                            Missionário Shalom
+                        </p>
+                    </div>
+                </a>
+            </div>
         </article>
-    </section>
-
-    <!-- Parte final (visão do futuro e hobbies) -->
-
-    <section class="parte_final_sobre_nos">
 
         <!-- Visão do futuro -->
 
@@ -280,7 +273,7 @@
 
             <div class="card-visao_do_futuro">
                 <p>
-                    *visão do futuro*
+                    No futuro, pretendo me formar em Técnico em Informática para Internet, fazer o ENEM, me formar em alguma graduação na área de TI. Depois disso, pretendo fazer algum concurso público de nível superior e ser concursado, caso eu não consiga passar e eu tenha a oportunidade de trabalhar na área da minha graduação, eu aproveito essa oportunidade.
                 </p>
             </div>
         </article>
@@ -294,16 +287,25 @@
 
             <div>
                 <ul>
-                    <li>🎬 Assistir filmes e séries principalmente da Marvel, inclusive meus herois favoritos são o Homem-Aranha e a Feiticeira Escarlate;</li>
-                    <li>🎮 Jogar um pouco no celular;</li>
-                    <li>🏊‍♂️ Fazer natação no IF;</li>
-                    <li>🎧 Ouvir música;</li>
-                    <li>👥 Conversar com os amigos;</li>
-                    <li>👨‍💻 Estudar programação de vez em quando; e</li>
-                    <li>📖 Ler às vezes.</li>
+                    <li>Assistir filmes e séries principalmente da Marvel, inclusive meus herois favoritos são o Homem-Aranha e a Feiticeira Escarlate 🎬</li>
+                    <li>Jogar um pouco no celular 🎮</li>
+                    <li>Fazer natação no IF 🏊‍♂️</li>
+                    <li>Ouvir música 🎧</li>
+                    <li>Conversar com os amigos 👥</li>
+                    <li>Estudar programação de vez em quando 👨‍💻</li>
+                    <li>Ler às vezes 📖</li>
                 </ul>
             </div>
         </article>
+    </section>
+
+    <!-- Vídeo trailer do filme Homem-Aranha: Um Novo Dia -->
+
+    <section class="video-trailer">
+        <h2>
+            Trailer do filme Homem-Aranha: Um Novo Dia
+        </h2>
+        <video src="video/trailerspider.mp4" controls></video>
     </section>
 </body>
 </html>

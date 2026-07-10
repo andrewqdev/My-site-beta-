@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*
  Faz com que ao clicar no href(link do menu, por exemplo, a página role suavemente até lá.
  */ 
@@ -12,7 +13,6 @@ Garante que, ao rolar o usuário pro lugar determinado, o título não bugue e f
 section[id] {
     scroll-margin-top: 80px;
 }
-
 
 body {
     background-color: #071212;
@@ -45,14 +45,6 @@ header a {
     padding-right: 10px;
     padding-left: 5px;
 }
-section {
-    margin: 20px;
-}
-
-.boasvindas {
-    text-align: center;
-}
-
 
 h1 {
     color: cyan;
@@ -67,14 +59,19 @@ a:hover {
     color: #baffff;
 }
 
-img {
-    display: flex;
-    width: 200;
+#perfil-andrew {
     height: 400px;
+
+}
+
+#perfil-marcus {
+    height: 429px;
 }
 
 #inicio {
     text-align: justify;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .inicio_sobre_nos {
@@ -83,8 +80,14 @@ img {
     align-items: center;
     line-height: 10px;
     padding-top: 30px;
-    padding-right: 90px;
-    padding-left: 40px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.texto_sobre_nos {
+    font-size: 14px;
+    line-height: 20px;
+    width: 700px;
 }
 
 .informacoes_principais {
@@ -108,17 +111,26 @@ img {
 }
 
 .gosto_musical {
+    padding-top: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.cards_de_musica { /* incompleto */
+.texto-gosto_musical {
+    max-width: 700px;
+}
+
+.cards_de_musica {
     display: flex;
     justify-content: center;
     gap: 110px;
 }
 
-.card_de_musica { /* incompleto */
+.card_de_musica {
     border: 2px solid #008b8b;
+    justify-content: center;
     border-radius: 10px;
     width: 150px;
     height: 225px;
@@ -128,14 +140,15 @@ img {
 .card_de_musica img {
     width: 150px;
     height: 150px;
+    border-radius: 10px;
 }
 
 .card_de_musica:hover {
     border: 2px solid #00ffff;
 }
 
-.parte_final_sobre_nos {
-    background-image: linear-gradient(180deg, #071212, #0b2222 12%, #0b2222 88%, #071212);
+.conteudo {
+    background-image: linear-gradient(180deg, #071212, #0b2222bb 5%, #0b2222bb 95%, #071212);
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -148,7 +161,7 @@ img {
 }
 
 .card-visao_do_futuro {
-    border: 2px solid #baffff;
+    border: 2px solid #008b8b;
     border-radius: 10px;
     padding: 30px;
     width: 670px;
@@ -166,6 +179,11 @@ img {
 }
 
 .hobbies div ul{
-    list-style-type: none;
     max-width: 550px;
+}
+
+.video-trailer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
